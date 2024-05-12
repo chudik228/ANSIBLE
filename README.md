@@ -3,6 +3,7 @@
 Гайд на вланы
 на 3
 sudo ip route add 172.19.0.0/16 via 10.10.0.1
+
 на 1
 sudo ip route add 10.10.0.0/16 via 172.19.0.1
 
