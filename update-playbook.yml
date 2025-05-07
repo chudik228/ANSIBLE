@@ -1,0 +1,13 @@
+---
+- name: Обновление ПО из локального репозитория
+  hosts: clients
+  become: yes
+
+  tasks:
+    - name: Обновить кэш APT
+      apt:
+        update_cache: yes
+
+    - name: Обновить установленные пакеты
+      apt:
+        upgrade: dist
