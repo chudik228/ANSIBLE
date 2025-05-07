@@ -5,9 +5,9 @@
 
   tasks:
     - name: Обновить кэш APT
-      apt:
+      ansible.builtin.apt:
         update_cache: yes
 
     - name: Обновить установленные пакеты
-      apt:
+      ansible.builtin.apt:
         upgrade: dist
